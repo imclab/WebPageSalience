@@ -1,0 +1,27 @@
+{
+  "name": "page-gaze-prediction",
+  "version": "0.0.1",
+  "description": "Saliency to predict where users will look on a given web page.",
+  "author": "Brenden Kokoszka",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/brenden/page-gaze-prediction.git"
+  },
+  "engine": [ "node >=0.7.00" ],
+  "devDependencies": {
+    "mocha" : "*",
+    "should": "*"
+  },
+  "dependencies": {
+    "webshot" : "0.2.x",
+    "opencv" : "0.0.x",
+    "flatiron": "0.2.x",
+    "union": "0.1.x",
+    "ecstatic": "0.1.x"
+  },
+  "main": "./lib/main.js",
+  "scripts": {
+    "test"  : "mocha --ui bdd --reporter spec --require should ./test/tests.js"
+  }
+}
