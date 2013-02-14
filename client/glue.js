@@ -5,11 +5,10 @@
       var targetURL = $('#target-url').val();
       $.ajax({
         url: '/salience'
-      , dataType: 'json'
       , data: {targetURL: targetURL}
       })
       .success(function(imageData) {
-        console.log(imageData);
+        $('#salience-map').attr('src', 'data:image/png;base64,' + imageData);
       })
     });
   });

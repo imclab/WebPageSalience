@@ -20,11 +20,12 @@ app.router.configure({
 });
 
 app.router.get('/salience', function() {
+  var self = this;
   var targetURL = this.req.query.targetURL;
 
   rasterizer(targetURL, function(err, imageData) { 
-    this.res.writeHead(200, {'Content-Type': 'application/json'});
-    this.res.end(JSON.stringify({target: targetURL}));
+    self.res.writeHead(200, {'Content-Type': 'text/plain'});
+    self.res.end(imageData);
   });
 });
 
