@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "webshot" : "0.2.x",
-    "opencv" : "0.0.x",
+    "opencv" : "https://github.com/peterbraden/node-opencv.git",
     "flatiron": "0.2.x",
     "union": "0.1.x",
     "ecstatic": "0.1.x"
